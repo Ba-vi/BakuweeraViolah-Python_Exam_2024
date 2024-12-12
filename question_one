@@ -1,0 +1,45 @@
+# question one
+# i
+def circle_area(radius):
+    pie = 3.14
+    area = pie * (radius ** 2)# where the radius = r
+    return area
+radius = 4 # testing the function with radius 4
+out_put= circle_area(radius)
+print(f"The radius of circle with radius {radius} is:{out_put}")
+
+
+# question one ii)
+
+integers = [4,7,2,9,12,15]# given integers
+
+odd_sum = 0 #  our initial odd sum is zero
+for num in integers: 
+        if num  % 2 != 0: # Screening out odd numbers
+            odd_sum += num 
+print(f"The sum of all odd numbers is :{odd_sum:.3f}") 
+
+#  question one iii)
+def  numbers():
+     num1=int(input("Enter the first number:"))
+     num2= int(input("Enter the second number:"))
+     total= num1+num2
+     difference=num1-num2
+     product= num1*num2
+     quotient= num1/num2
+     return total,difference,product,quotient
+num1=20 # testing with random number values
+num2=2
+print( f"The sum of the two numbers is :",num1+num2) # printing out the results
+print(f"The difference between the two numbers is:",num1-num2)
+print( f"The product of the two numbers is:",num1*num2)
+print(f"The quotient of the two numbers is :",num1/num2)
+     
+
+
+
+#  question one iv)
+student_info = {'name' : 'Alice' , 'age' : '20' , 'grade' : 'A'}
+student_info['age'] = 26 # updating the value of age
+student_info['city'] = 'Kampala' # adding a new key value pair
+print(student_info)
